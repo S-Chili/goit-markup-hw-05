@@ -485,6 +485,29 @@
     width: 370px;
 }
 
+.apps-image {
+    position: relative;
+}
+
+.apps-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+}
+
+.apps-overlay > p {
+    margin: 0;
+    padding: 63px 24px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.56;
+}
+
 .apps-deskr {
     border-bottom: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
@@ -494,6 +517,10 @@
 .shadow {
     display: block;
     text-decoration: none
+}
+
+.shadow:hover .apps-overlay {
+    opacity: 1;
 }
 
 .shadow:hover {
