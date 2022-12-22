@@ -90,6 +90,10 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover, 
@@ -120,13 +124,22 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-hover {
     fill: #757575;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-hover:hover {
+.nav-hover:hover,
+.nav-hover:focus {
     fill: #2196F3;
 }
 
@@ -179,6 +192,9 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition-property: opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -194,7 +210,25 @@
     height: 581px;
     width: 521px;
     background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     position: absolute;
+}
+
+.decision-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /* features */
@@ -327,9 +361,14 @@
 
 .for-hover {
     fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.for-hover:hover {
+.for-hover:hover,
+.for-hover:focus {
     fill: var(--white-color);
 }
 
@@ -341,7 +380,8 @@
     cursor: pointer;
 }
 
-.network:hover {
+.network:hover,
+.network:focus {
     background-color: var(--accent-color);
 }
 
@@ -432,17 +472,26 @@
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     background-color: var(--white-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-hover {
     fill: #AFB1B8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-hover:hover {
     fill: var(--accent-color);
 }
 
-.link-customers:hover {
+.link-customers:hover,
+.link-customers:focus {
     border-color: var(--accent-color);
 }
 
@@ -483,6 +532,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+
+    transition-property: color, background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .large {
@@ -523,6 +576,10 @@
     color: var(--white-color);
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .apps-overlay > p {
@@ -540,15 +597,20 @@
 }
 
 .shadow {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     text-decoration: none
 }
 
-.shadow:hover .apps-overlay {
+.shadow:hover .apps-overlay,
+.shadow:focus .apps-overlay {
     opacity: 1;
 }
 
-.shadow:hover {
+.shadow:hover,
+.shadow:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -592,6 +654,10 @@
 }
 
 .footer-item {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     color: var(--white-color);
     font-style: normal;
     text-decoration: none;
@@ -603,6 +669,10 @@
 }
 
 .footer-address {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     text-decoration: none;
@@ -667,9 +737,14 @@
     border-radius: 50%;
     fill: #FFF;
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-hover:hover {
+.foot-hover:hover,
+.foot-hover:focus {
     background-color: var(--accent-color);
 }
 

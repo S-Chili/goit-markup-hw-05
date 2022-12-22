@@ -66,7 +66,19 @@
         </div>
         <div class="decision-backdrop is-hidden" data-modal>
           <div class="decision-modal">
-            <button type="button" data-modal-close>X</button>
+            <button type="button" class="decision-btn" data-modal-close>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="none"
+              >
+                <path
+                  fill="#000"
+                  d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -132,28 +144,43 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="examples list">
             <li class="examples-item">
-              <img
-                class="block"
-                src="./images/projectdesign.jpg"
-                alt="верстка сайту на планшеті та комп'ютері"
-                width="370"
-              />
+              <div class="examples-card">
+                <img
+                  class="block"
+                  src="./images/projectdesign.jpg"
+                  alt="верстка сайту на планшеті та комп'ютері"
+                  width="370"
+                />
+                <div class="example-deskr">
+                  <p class="example-texts">десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="examples-item">
-              <img
-                class="block"
-                src="./images/adaptdesign.jpg"
-                alt="телефон та ноутбук з проєктом дизайну"
-                width="370"
-              />
+              <div class="examples-card">
+                <img
+                  class="block"
+                  src="./images/adaptdesign.jpg"
+                  alt="телефон та ноутбук з проєктом дизайну"
+                  width="370"
+                />
+                <div class="example-deskr">
+                  <p class="example-texts">мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="examples-item">
-              <img
-                class="block"
-                src="./images/colorscheme.jpg"
-                alt="планшет з кольоровою гамою"
-                width="370"
-              />
+              <div class="examples-card">
+                <img
+                  class="block"
+                  src="./images/colorscheme.jpg"
+                  alt="планшет з кольоровою гамою"
+                  width="370"
+                />
+                <div class="example-deskr">
+                  <p class="example-texts">дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
