@@ -124,22 +124,18 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-hover {
+.nav__item .nav-hover {
     fill: #757575;
 
-    transition-property: fill;
+    transition-property: fill, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-hover:hover,
-.nav-hover:focus {
+.nav__item .nav-hover:hover,
+.nav__item .nav-hover:focus {
     fill: #2196F3;
 }
 
@@ -303,6 +299,30 @@
     line-height: 1.17;
     text-align: center;
 }
+
+.examples-card {
+    position: relative;
+}
+
+.example-deskr {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.example-texts {
+    max-height: 16px;
+    font-weight: 700;
+    line-height: 1,1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 25px;
+    margin-bottom: 29px;
+}
+
 
 /* stuff */
 
