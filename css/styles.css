@@ -16,6 +16,8 @@
     --tittle-background-color: #F5F4FA;
     --grey-background: #2F303A;
     --new-bgr: rgba(196, 196, 196, 1);
+
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     } 
 
 
@@ -94,7 +96,7 @@
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--timing-function);
 }
 
 .site-nav .link:hover, 
@@ -201,7 +203,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    transition-property: opacity;
+    transition-property: opacity, transform;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -390,6 +392,9 @@
     border-radius: 50%;
     color: #AFB1B8;
     background-color: var(--white-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .for-hover {
@@ -400,8 +405,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.for-hover:hover,
-.for-hover:focus {
+.network:hover .for-hover,
+.network:focus .for-hover {
     fill: var(--white-color);
 }
 
@@ -493,6 +498,7 @@
 
 .link-logo {
     cursor: pointer;
+    
 }
 
 .link-customers {
@@ -519,8 +525,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-hover:hover,
-.clients-hover:focus {
+.link-customers:hover .clients-hover,
+.link-customers:focus .clients-hover {
     fill: var(--accent-color);
 }
 
